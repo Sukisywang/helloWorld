@@ -1,2 +1,1 @@
-# helloWorld
-# project describtion
+# project description
