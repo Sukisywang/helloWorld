@@ -1,0 +1,13 @@
+<!--short key to create html skeleton: !+Enter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}"> <!--Jinja2 syntax, link the stylesheet, link javascript in the same way-->
+    {% block head %}{% endblock %}  <!--Jinja2 Template Engine-->
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>
