@@ -1,7 +1,10 @@
 #file name must be app.py
 from flask import Flask, jsonify, render_template, url_for
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI']-'sqlite'
+
 @app.route("/")
 def helloWorld():
     return "<b>my first Flask application in action!</b>"
